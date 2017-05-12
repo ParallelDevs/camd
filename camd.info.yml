@@ -1,0 +1,45 @@
+name: Camp Distribution
+type: profile
+description: 'Install with commonly used features pre-configured.'
+version: '8.x-2.14-dev'
+core: 8.x
+distribution:
+  name: Camp Distribution
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+themes:
+  - bartik
+  - seven
