@@ -1,10 +1,10 @@
-name: Camp Distribution
+name: Camp
 type: profile
 description: 'Install with commonly used features pre-configured.'
 version: '8.x-2.14-dev'
 core: 8.x
 distribution:
-  name: Camp Distribution
+  name: Camp
 dependencies:
   - node
   - history
