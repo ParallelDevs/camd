@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.session
+  module:
+    - text
+id: node.session.body
+field_name: body
+entity_type: node
+bundle: session
+label: Description
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>Please give us a detailed overview of your session and why attendees will be excited to hear about it. &nbsp;</p>\r\n\r\n<p>Ensure that you let us know:</p>\r\n\r\n<ul>\r\n\t<li>What level of knowledge should attendees have before walking into your session</li>\r\n\t<li>What will your session accomplish and what will attendees walk away having learned</li>\r\n</ul>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
