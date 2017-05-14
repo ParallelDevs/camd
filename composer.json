@@ -1,0 +1,16 @@
+{
+    "name": "paralleldevs/camd",
+    "description": "Drupal 8 distribution for Conferences",
+    "minimum-stability": "dev",
+    "type": "drupal-profile",
+    "require": {
+        "drupal/core": "~8.3.1"
+    },
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Daniel Noyola",
+            "email": "danielnv18@gmail.com"
+        }
+    ]
+}
