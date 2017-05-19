@@ -3,9 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_end_date
     - field.field.node.session.field_speakers
+    - field.field.node.session.field_start_date
     - node.type.session
   module:
+    - datetime
     - text
     - user
 id: node.session.default
@@ -20,6 +23,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_end_date:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_speakers:
     weight: 102
     label: above
@@ -27,6 +39,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_start_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   links:
     weight: 100

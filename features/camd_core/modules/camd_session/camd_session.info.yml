@@ -1,8 +1,9 @@
-name: Camd Session
+name: 'Camd Session'
 description: 'Provides Session content type and related configuration. Use this content type to propose sessions at the event.'
 type: module
 core: 8.x
 dependencies:
+  - datetime
   - field
   - menu_ui
   - node
