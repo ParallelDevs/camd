@@ -1,0 +1,5 @@
+name: 'Camd Roles'
+type: module
+core: 8.x
+dependencies:
+  - user

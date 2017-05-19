@@ -1,11 +1,13 @@
-name: Camp
+name: Camd
 type: profile
-description: 'Install with commonly used features pre-configured.'
+description: 'Install with commonly used features pre-configured for Camps.'
 version: '8.x-2.14-dev'
 core: 8.x
 distribution:
-  name: Camp
+  name: Camd
 dependencies:
+
+  # Core
   - node
   - history
   - block
@@ -40,6 +42,9 @@ dependencies:
   - views_ui
   - tour
   - automated_cron
+
+  # Camd
+  - camd_core
 themes:
   - bartik
   - seven

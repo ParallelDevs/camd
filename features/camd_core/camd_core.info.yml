@@ -1,0 +1,7 @@
+name: Camd Core
+type: module
+description: Share funcionality for the Camd distribution
+core: 8.x
+package: Camd
+dependencies:
+  - camd_roles
