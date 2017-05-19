@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.session.field_end_date
     - field.field.node.session.field_speakers
     - field.field.node.session.field_start_date
+    - field.field.node.session.field_track
     - node.type.session
   module:
     - datetime
@@ -18,7 +19,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 4
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -27,12 +28,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_end_date:
-    weight: 3
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -47,14 +48,20 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_start_date:
-    weight: 2
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_track:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   path:
     type: path
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -62,14 +69,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -82,7 +89,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
