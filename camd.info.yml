@@ -41,10 +41,10 @@ dependencies:
   - views
   - views_ui
   - tour
-  - automated_cron
 
   # Camd
   - camd_core
+
 themes:
   - bartik
   - seven

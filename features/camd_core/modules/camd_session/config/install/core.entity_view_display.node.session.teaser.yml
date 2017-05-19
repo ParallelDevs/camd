@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_speakers
     - node.type.session
   module:
     - text
@@ -24,4 +25,5 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_speakers: true
