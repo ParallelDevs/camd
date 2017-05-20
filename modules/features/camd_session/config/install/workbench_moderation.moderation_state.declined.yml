@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: declined
+label: Declined
+published: false
+default_revision: false

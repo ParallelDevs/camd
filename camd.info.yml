@@ -42,9 +42,10 @@ dependencies:
   - views_ui
   - tour
 
-  # Camd
+  # Contrib
   - camd_core
   - field_permissions
+  - workbench_moderation
 
 themes:
   - bartik

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.proposed
+id: propose_session
+label: 'Propose Session'
+stateFrom: proposed
+stateTo: proposed
+weight: -10

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.accepted
+    - workbench_moderation.moderation_state.declined
+id: decline_session
+label: 'Decline Session'
+stateFrom: accepted
+stateTo: declined
+weight: -12

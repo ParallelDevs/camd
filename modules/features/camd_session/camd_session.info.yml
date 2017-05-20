@@ -12,4 +12,5 @@ dependencies:
   - taxonomy
   - text
   - user
+  - workbench_moderation
 package: Camd

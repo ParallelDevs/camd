@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.accepted
+    - workbench_moderation.moderation_state.cancelled
+id: cancel_session
+label: 'Cancel Session'
+stateFrom: accepted
+stateTo: cancelled
+weight: -13
