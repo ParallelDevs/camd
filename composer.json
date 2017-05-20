@@ -13,7 +13,9 @@
     ],
     "require-dev": {
         "drupal/console": "~1.0",
-        "drupal/drupal-extension": "~3.0"
+        "drupal/drupal-extension": "~3.0",
+        "phing/phing": "2.*",
+        "phpunit/phpunit": "^6.1"
     },
     "require": {
         "composer/installers": "^1.3",
