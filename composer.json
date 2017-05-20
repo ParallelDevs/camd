@@ -4,7 +4,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "type": "drupal-profile",
-
     "license": "GPL-2.0+",
     "authors": [
         {
@@ -13,12 +12,14 @@
         }
     ],
     "require-dev": {
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "drupal/drupal-extension": "~3.0"
     },
     "require": {
         "composer/installers": "^1.3",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.3",
+        "drupal/core": "^8.3",
         "drupal/field_permissions": "^1.0@beta",
         "drupal/workbench_moderation": "^1.2"
     },
@@ -40,7 +41,13 @@
     },
     "extra": {
         "installer-paths": {
-            "modules/contrib/{$name}": [
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/profiles/camd/modules/contrib/{$name}": [
                 "type:drupal-module"
             ]
         }
