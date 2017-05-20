@@ -5,3 +5,14 @@ id: reviewer
 label: Reviewer
 weight: 4
 is_admin: null
+permissions:
+  - 'create field_end_date'
+  - 'create field_start_date'
+  - 'edit field_end_date'
+  - 'edit field_start_date'
+  - 'edit own field_end_date'
+  - 'edit own field_start_date'
+  - 'view field_end_date'
+  - 'view field_start_date'
+  - 'view own field_end_date'
+  - 'view own field_start_date'

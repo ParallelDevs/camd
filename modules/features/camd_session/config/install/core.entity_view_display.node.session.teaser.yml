@@ -4,7 +4,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_end_date
     - field.field.node.session.field_speakers
+    - field.field.node.session.field_start_date
+    - field.field.node.session.field_track
     - node.type.session
   module:
     - text
@@ -26,4 +29,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_end_date: true
   field_speakers: true
+  field_start_date: true
+  field_track: true

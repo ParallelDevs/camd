@@ -12,11 +12,14 @@
             "email": "danielnv18@gmail.com"
         }
     ],
+    "require-dev": {
+        "drupal/console": "~1.0"
+    },
     "require": {
         "composer/installers": "^1.3",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.3",
-        "drupal/core": "~8.3.1",
+        "drupal/field_permissions": "^1.0@beta",
         "drupal/workbench_moderation": "^1.2"
     },
     "config": {
@@ -37,12 +40,6 @@
     },
     "extra": {
         "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/libraries/{$name}": [
-                "type:drupal-library"
-            ],
             "modules/contrib/{$name}": [
                 "type:drupal-module"
             ]
