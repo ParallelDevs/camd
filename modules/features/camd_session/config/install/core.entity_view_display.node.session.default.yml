@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_end_date
+    - field.field.node.session.field_level
     - field.field.node.session.field_room
     - field.field.node.session.field_speakers
     - field.field.node.session.field_start_date
@@ -11,6 +12,7 @@ dependencies:
     - node.type.session
   module:
     - datetime
+    - options
     - text
     - user
 id: node.session.default
@@ -33,6 +35,13 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_level:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_room:
     weight: 106
